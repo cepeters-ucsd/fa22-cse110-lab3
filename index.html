@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="Loop Arena Meeting Minutes">
+        <meta name="author" content="Chase Peterson">
+        <link rel="icon" type="image/x-icon" href="images/clock_blue.ico">
+        <title>Ludum Dare Meeting Minutes</title>
+    </head>
+    <body>
+        <nav>
+            <a href="#attendance">Attendance</a> 
+            <a href="#agenda">Agenda</a> 
+            <a href="#media">Media</a> 
+            <a href="#useless-form">Form</a>
+        </nav>
+
+        <hr>
+
+        <!-- Heading with Subtitle & Date -->
+        <header>
+            <h1>Ludum Dare Game: <span>Loop Arena</span></h1>
+            <h2>Next Steps</h2>
+            <h2>10/3/22</h2>
+        </header>
+
+        <hr>
+
+        <!-- Attendance List (Bold Team Leaders) -->
+        <section id="attendance">
+            <h3>Attendance List</h3>
+            <ul>
+                <li><b><i>TA</i> Sourabh Rajamurali</b></li>
+                <li><b><i>Team Lead</i> Kalyan Sunkara</b></li>
+                <li><b><i>Team Lead</i> Chase Peterson</b></li>
+                <br>
+                <li>Bryce Beeson</li>
+                <li>Haochen Wang</li>
+                <li>Jun Ye</li>
+                <li>Kyle Yee</li>
+                <li>Xun Liu</li>
+                <li>Raymond Romero</li>
+                <li>Thomas Joel</li>
+            </ul>
+        </section>
+
+        <!-- Agenda w/ Unfinished/New Business/Misc -->
+        <section id="agenda">
+            <h3>Agenda</h3>
+            <ol>
+                <li>
+                    <strong>Unfinished Business</strong>
+                    <ul>
+                        <li><em>Top Priority: Fix saving system.</em></li>
+                        <li>Firecaster enemy.</li>
+                        <li>Highscore bugfixing.</li>
+                        <li>SFX bugfixing.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>New Business</strong>
+                    <ul>
+                        <li>Mouse tracking out of game.</li>
+                        <li>Creating a logo.</li>
+                        <li>Game webpage.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Extra</strong>
+                    <ul>
+                        <li>Entering into Jam or Compo?</li>
+                        <li>Other questions.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        
+        <!-- Some Diagrams & Pictures -->
+        <section id="media">
+            <h3>Screenshots</h3>
+            <img src="images/game_1.png" alt="Game Screenshot 1" width="256">
+            <img src="images/game_3.png" alt="Game Screenshot 2" width="256">
+            <img src="images/game_4.png" alt="Game Screenshot 3" width="256">
+
+            <!-- Some Audio & Video -->
+            <h3>Game Sound</h3>
+            <audio controls>
+                <source src="media/gameaudio.mp3" type="audio/mp3">
+                Audio unsupported.
+            </audio>
+
+            <h3>Game Footage</h3>
+            <video width="384" height="480" controls>
+                <source src="media/footage.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- Form -->
+        <div id="useless-form">
+            <h3>Useless Form</h3>
+            <form>
+                <fieldset>
+                    <b>What is the name of the game?<br></b>
+                    <input id="name" type="text">
+                    <br><br>
+                    
+                    <b>What is your review of the game?</b><br>
+                    <textarea id="review"></textarea>
+                    
+                    <br><br>
+
+                    <b>Did the highscore save for you?</b>
+                    <input list="highscore">
+                    <datalist id="highscore">
+                        <option value="Yes">
+                        <option value="No">
+                        <option value="Not sure">
+                    </datalist>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <b>What would you rate this game?</b>
+                    <select id="stars">
+                        <option>5 stars</option>
+                        <option>4 stars</option>
+                        <option>3 stars</option>
+                        <option>2 stars</option>
+                        <option>1 star</option>
+                    </select>
+
+                    <br><br>
+
+                    <b>When did you first play this game?</b>
+                    <input type="date">
+
+                    <br><br>
+
+                    <b>Which enemy was your favorite?</b>
+                    <input type="radio" id="zombie" name="enemies" value="zombie">
+                    <label for="zombie">Zombie</label>
+                    <input type="radio" id="slime" name="enemies" value="slime">
+                    <label for="slime">Slime</label>
+                    <input type="radio" id="firecaster" name="enemies" value="firecaster">
+                    <label for="firecaster">Firecaster</label>
+                    <input type="radio" id="wizard" name="enemies" value="wizard">
+                    <label for="wizard">Wizard</label>
+                    
+                    <br><br>
+
+                    <b>Which enemies do you think should be changed?</b>
+                    <input type="checkbox" id="zombie" name="enemies" value="zombie">
+                    <label for="zombie">Zombie</label>
+                    <input type="checkbox" id="slime" name="enemies" value="slime">
+                    <label for="slime">Slime</label>
+                    <input type="checkbox" id="firecaster" name="enemies" value="firecaster">
+                    <label for="firecaster">Firecaster</label>
+                    <input type="checkbox" id="wizard" name="enemies" value="wizard">
+                    <label for="wizard">Wizard</label>
+
+                </fieldset>
+
+                <br>
+
+                <button type="button">Submit</button>
+            </form>
+        </div>
+    
+        <br>
+        <hr>
+
+
+        <!-- Footer -->
+        <footer>
+            <details>
+                <summary>What is the game?</summary>
+                <p>Loop Arena is a game created for Ludum Dare 51. I made it the night before/morning of the end of the jam, so it's pretty simple, but it's a project I had ready for this meeting minutes. It's a simple arcade game where you fight enemies that spawn in a 10-second loop, with each loop getting progressively harder.</p>
+            </details>
+            <p>Finished Game: <a href="https://ldjam.com/events/ludum-dare/51/loop-arena">Loop Arena</a></p>
+        </footer>
+    </body>
+</html>
