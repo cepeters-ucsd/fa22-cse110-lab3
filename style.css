@@ -1,0 +1,135 @@
+/* includes the Roboto font */
+@font-face {
+    font-family: Roboto;
+    src: url(media/fonts/Roboto-Regular.ttf);
+}
+
+* {
+    font-family: Roboto;
+}
+
+#title {
+    color: brown;
+}
+
+#subtitle {
+    color: #555599;
+}
+
+#date {
+    color: rgb(10, 150, 10);
+}
+
+header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h1, h3 {
+    text-decoration: underline solid;
+    position: static;
+}
+
+@media (min-width: 600px) {
+    header {
+        background-color: hsl(29, 100%, 95%);
+        text-align: center;
+        display: grid;
+        height: 3in;
+        place-items: center;
+        align-items: stretch;
+        grid-gap: 30px;
+    }
+}
+
+summary {
+    position: relative;
+}
+
+.sect-heading {
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 500px;
+    max-width: 800px;
+}
+
+.sect-heading:hover {
+    background-color: #EEE;
+}
+
+a.menu-item {
+    color: rgb(22, 170, 170);
+    text-decoration: none;
+}
+
+a.menu-item:hover {
+    color: teal;
+}
+
+a.menu-item:active {
+    color: rgb(0, 58, 58);
+}
+
+nav {
+    width: 80%;
+    border: 3px black solid;
+    border-radius: 3px;
+    padding: 8pt 8pt 8pt 8pt;
+    margin: auto;
+}
+
+nav > div {
+    margin: auto;
+    width: fit-content;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+section ul {
+    align-self: start;
+}
+
+[type="button"] {
+    height: 1.5em;
+    min-width: 100px;
+    width: 15vw;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+[type="button"]:hover {
+    background-color: lightgray;
+}
+
+fieldset {
+    margin: 5px 30px 5px 30px;
+}
+
+summary + h1 {
+    display: none;
+}
+
+a ~ .hidden-menu {
+    display: none;
+}
+
+div#pictures {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}

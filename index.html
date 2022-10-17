@@ -4,30 +4,39 @@
         <meta name="description" content="Loop Arena Meeting Minutes">
         <meta name="author" content="Chase Peterson">
         <link rel="icon" type="image/x-icon" href="images/clock_blue.ico">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            h3 {
+                background-color: #EEE;
+            }
+        </style>
         <title>Ludum Dare Meeting Minutes</title>
     </head>
     <body>
         <nav>
-            <a href="#attendance">Attendance</a> 
-            <a href="#agenda">Agenda</a> 
-            <a href="#media">Media</a> 
-            <a href="#useless-form">Form</a>
+            <div>
+                <a href="#attendance" class="menu-item">Attendance</a> 
+                <a href="#agenda" class="menu-item">Agenda</a> 
+                <a href="#media" class="menu-item">Media</a> 
+                <a href="#useless-form" class="menu-item">Form</a>
+                <a class="hidden-menu">Misc</a>
+            </div>
         </nav>
 
         <hr>
 
         <!-- Heading with Subtitle & Date -->
         <header>
-            <h1>Ludum Dare Game: <span>Loop Arena</span></h1>
-            <h2>Next Steps</h2>
-            <h2>10/3/22</h2>
+            <h1 id="title" style="font-size: 30px">Ludum Dare Game: <span>Loop Arena</span></h1>
+            <h2 id="subtitle">Next Steps</h2>
+            <h2 id="date">10/3/22</h2>
         </header>
 
         <hr>
 
         <!-- Attendance List (Bold Team Leaders) -->
         <section id="attendance">
-            <h3>Attendance List</h3>
+            <h3 class="sect-heading">Attendance List</h3>
             <ul>
                 <li><b><i>TA</i> Sourabh Rajamurali</b></li>
                 <li><b><i>Team Lead</i> Kalyan Sunkara</b></li>
@@ -44,7 +53,7 @@
 
         <!-- Agenda w/ Unfinished/New Business/Misc -->
         <section id="agenda">
-            <h3>Agenda</h3>
+            <h3 class="sect-heading">Agenda</h3>
             <ol>
                 <li>
                     <strong>Unfinished Business</strong>
@@ -75,19 +84,21 @@
         
         <!-- Some Diagrams & Pictures -->
         <section id="media">
-            <h3>Screenshots</h3>
-            <img src="images/game_1.png" alt="Game Screenshot 1" width="256">
-            <img src="images/game_3.png" alt="Game Screenshot 2" width="256">
-            <img src="images/game_4.png" alt="Game Screenshot 3" width="256">
+            <h3 class="sect-heading">Screenshots</h3>
+            <div id="pictures">
+                <img src="images/game_1.png" alt="Game Screenshot 1" width="256">
+                <img src="images/game_3.png" alt="Game Screenshot 2" width="256">
+                <img src="images/game_4.png" alt="Game Screenshot 3" width="256">
+            </div>
 
             <!-- Some Audio & Video -->
-            <h3>Game Sound</h3>
+            <h3 class="sect-heading">Game Sound</h3>
             <audio controls>
                 <source src="media/gameaudio.mp3" type="audio/mp3">
                 Audio unsupported.
             </audio>
 
-            <h3>Game Footage</h3>
+            <h3 class="sect-heading">Game Footage</h3>
             <video width="384" height="480" controls>
                 <source src="media/footage.mp4" type="video/mp4">
             </video>
@@ -95,7 +106,7 @@
 
         <!-- Form -->
         <div id="useless-form">
-            <h3>Useless Form</h3>
+            <h3 class="sect-heading">Useless Form</h3>
             <form>
                 <fieldset>
                     <b>What is the name of the game?<br></b>
@@ -175,6 +186,7 @@
         <footer>
             <details>
                 <summary>What is the game?</summary>
+                <h1>oops</h1>
                 <p>Loop Arena is a game created for Ludum Dare 51. I made it the night before/morning of the end of the jam, so it's pretty simple, but it's a project I had ready for this meeting minutes. It's a simple arcade game where you fight enemies that spawn in a 10-second loop, with each loop getting progressively harder.</p>
             </details>
             <p>Finished Game: <a href="https://ldjam.com/events/ludum-dare/51/loop-arena">Loop Arena</a></p>
